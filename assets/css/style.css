@@ -1,15 +1,38 @@
-* {
+body {
     margin: 0;
     padding: 0;
     border: none;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-}
-
-body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: black;
     width:100%;
+}
+
+.flex {
+    display:flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background: red;
+    padding: 1% 1%;
+}
+
+#choose-weapon {
+    background: blue;
 }
