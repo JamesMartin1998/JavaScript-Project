@@ -58,6 +58,10 @@ h2 {
     background: red;
 }
 
+.btn {
+    background: white;
+}
+
 #rock-image {
     background-image: url("/assets/images/rock.png");
     background-size: contain;
