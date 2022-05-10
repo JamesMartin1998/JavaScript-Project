@@ -33,6 +33,27 @@ header {
     padding: 1% 1%;
 }
 
-#choose-weapon {
-    background: blue;
+#weapon-buttons-container {
+    background:green;
+    width: 100%;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.weapon-btn {
+    width:7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin:1%;
+}
+
+.submit-btn {
+    width: 5rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: red;
 }
