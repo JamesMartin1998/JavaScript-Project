@@ -12,14 +12,15 @@ document.addEventListener("DOMContentLoaded", function(){
             }else{
                 let weaponChoice = this.getAttribute("data-type");
                 alert(`You selected ${weaponChoice}`)
-                console.log(weaponChoice);
+                displayWeaponImage(weaponChoice);
             }
         })
     }
 })
 
 function startGame(){
-    alert("You started the game")
+    alert("You started the game");
+
 }
 
 /** Generates a random number between 1 and 5. Each number corresponds to a different weapon variable. */
@@ -41,7 +42,7 @@ function genComputerWeapon(){
     }
 }
 
-/** Will use conidtions to calculate if the game is a win, draw or loss */
+/** Will use conditions to calculate if the game is a player win, draw or computer win */
 function calculateWinner(){
     let result;
     if (weaponChoice === "rock"){
@@ -86,3 +87,12 @@ function calculateWinner(){
         }
     }
 }
+
+/** Will add an image element to the html to show an image of the weapon selected by the player */
+function displayWeaponImage(weaponChoice){
+    let playerWeaponDiv = document.getElementById("player-weapon-div");
+    playerWeaponDiv.innerHTML = `
+        <img src="/assets/images/${weaponChoice}.png" alt="${weaponChoice} image" width="auto" height="100%"></img>
+    `;
+}
+
