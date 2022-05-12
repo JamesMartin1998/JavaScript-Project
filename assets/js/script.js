@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function(){
                 weaponChoice = this.getAttribute("data-type");
                 alert(`You selected ${weaponChoice}`)
                 displayWeaponImage(weaponChoice);
+                removeComputerImage();
+                clearWinnerMessage();
             }
         })
     }
@@ -114,6 +116,14 @@ function displayComputerImage(computerWeapon){
     `;
 }
 
+/** Removes the computer weapon image */
+function removeComputerImage(){
+    let computerWeaponDiv = document.getElementById("computer-weapon-div");
+    computerWeaponDiv.innerHTML = "";
+}
+
+
+/** Gets the span and changes the text content to show the game winner */
 function winnerMessage(){
     let winnerMessage = document.getElementsByTagName("span")[0];
     if (result === "playerWin"){
@@ -123,4 +133,10 @@ function winnerMessage(){
     } else {
         winnerMessage.textContent = "Draw";
     }
+}
+
+/** Clears the winner message */
+function clearWinnerMessage(){
+    let winnerMessage = document.getElementsByTagName("span")[0];
+    winnerMessage.textContent = "";
 }
