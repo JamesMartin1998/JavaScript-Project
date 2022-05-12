@@ -2,6 +2,10 @@
  *  The loop is used to check the data-type attribute of each button when clicked.
  *  If a weapon button is pressed, it will be stored in a variable. If the fight button is pressed, it will call the startGame function.
  */
+
+ let weaponChoice;
+ let result;
+
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
 
@@ -10,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
             if (this.getAttribute("data-type") === "submit"){
                 startGame();
             }else{
-                let weaponChoice = this.getAttribute("data-type");
+                weaponChoice = this.getAttribute("data-type");
                 alert(`You selected ${weaponChoice}`)
                 displayWeaponImage(weaponChoice);
             }
@@ -22,6 +26,8 @@ function startGame(){
     alert("You started the game");
     genComputerWeapon();
     displayComputerImage(computerWeapon);
+    calculateWinner();
+    console.log(result);
 }
 
 let computerWeapon;
@@ -48,9 +54,8 @@ function genComputerWeapon(){
 
 /** Will use conditions to calculate if the game is a player win, draw or computer win */
 function calculateWinner(){
-    let result;
     if (weaponChoice === "rock"){
-        if (computerWeapon === "lizard" || "scissors"){
+        if (computerWeapon === "lizard" || computerWeapon === "scissors"){
             result = "playerWin"
         } else if (computerWeapon === "rock"){
             result = "draw";
@@ -58,15 +63,15 @@ function calculateWinner(){
             result = "computerWin"
         }
     } else if (weaponChoice === "scissors"){
-        if (computerWeapon === "paper" || "lizard"){
-            result === "playerWin";
+        if (computerWeapon === "paper" || computerWeapon === "lizard"){
+            result = "playerWin";
         } else if (computerWeapon === "scissors"){
             result = "draw";
         } else {
             result = "computerWin";
         }
     } else if (weaponChoice === "paper"){
-        if (computerWeapon === "rock" || "spock"){
+        if (computerWeapon === "rock" || computerWeapon === "spock"){
             result = "playerWin";
         } else if (computerWeapon === "paper"){
             result = "draw";
@@ -74,7 +79,7 @@ function calculateWinner(){
             result = "computerWin"
         }
     } else if (weaponChoice === "lizard"){
-        if (computerWeapon === "spock" || "paper"){
+        if (computerWeapon === "spock" || computerWeapon === "paper"){
             result = "playerWin";
         } else if (computerWeapon === "lizard"){
             result = "draw";
@@ -82,7 +87,7 @@ function calculateWinner(){
             result = "computerWin"
         }
     } else {
-        if (computerWeapon === "scissors" || "rock"){
+        if (computerWeapon === "scissors" || computerWeapon === "rock"){
             result = "playerWin";
         } else if (computerWeapon === "spock"){
             result = "draw";
