@@ -20,3 +20,22 @@ document.addEventListener("DOMContentLoaded", function(){
 function startGame(){
     alert("You started the game")
 }
+
+/** Generates a random number between 1 and 5. Each number corresponds to a different weapon variable. */
+function genComputerWeapon(){
+    let randomNumber = Math.floor(Math.random() * 5) + 1;
+    
+    let computerWeapon;
+
+    if (randomNumber === 1){
+        computerWeapon = "rock";
+    } else if (randomNumber === 2){
+        computerWeapon = "paper";
+    } else if (randomNumber === 3){
+        computerWeapon = "scissors";
+    } else if (randomNumber === 4){
+        computerWeapon = "lizard";
+    } else {
+        computerWeapon = "spock";
+    }
+}
