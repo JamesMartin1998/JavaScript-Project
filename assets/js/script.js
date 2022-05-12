@@ -5,6 +5,8 @@
 
  let weaponChoice;
  let result;
+ let playerScore = 0;
+ let computerScore = 0;
 
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
