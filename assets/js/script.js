@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function(){
             if (this.getAttribute("data-type") === "submit"){
                 startGame();
             }else{
-                let WeaponChoice = this.getAttribute("data-type");
-                alert(`You selected ${WeaponChoice}`)
+                let weaponChoice = this.getAttribute("data-type");
+                alert(`You selected ${weaponChoice}`)
+                console.log(weaponChoice);
             }
         })
     }
@@ -37,5 +38,51 @@ function genComputerWeapon(){
         computerWeapon = "lizard";
     } else {
         computerWeapon = "spock";
+    }
+}
+
+/** Will use conidtions to calculate if the game is a win, draw or loss */
+function calculateWinner(){
+    let result;
+    if (weaponChoice === "rock"){
+        if (computerWeapon === "lizard" || "scissors"){
+            result = "playerWin"
+        } else if (computerWeapon === "rock"){
+            result = "draw";
+        } else {
+            result = "computerWin"
+        }
+    } else if (weaponChoice === "scissors"){
+        if (computerWeapon === "paper" || "lizard"){
+            result === "playerWin";
+        } else if (computerWeapon === "scissors"){
+            result = "draw";
+        } else {
+            result = "computerWin";
+        }
+    } else if (weaponChoice === "paper"){
+        if (computerWeapon === "rock" || "spock"){
+            result = "playerWin";
+        } else if (computerWeapon === "paper"){
+            result = "draw";
+        } else {
+            result = "computerWin"
+        }
+    } else if (weaponChoice === "lizard"){
+        if (computerWeapon === "spock" || "paper"){
+            result = "playerWin";
+        } else if (computerWeapon === "lizard"){
+            result = "draw";
+        } else {
+            result = "computerWin"
+        }
+    } else {
+        if (computerWeapon === "scissors" || "rock"){
+            result = "playerWin";
+        } else if (computerWeapon === "spock"){
+            result = "draw";
+        } else {
+            result = "computerWin";
+        }
     }
 }
