@@ -33,6 +33,7 @@ function startGame(){
     calculateWinner();
     console.log(result);
     winnerMessage();
+    incrementScore();
 }
 
 let computerWeapon;
@@ -141,4 +142,18 @@ function winnerMessage(){
 function clearWinnerMessage(){
     let winnerMessage = document.getElementsByTagName("span")[0];
     winnerMessage.textContent = "";
+}
+
+/** Increments the score for either the player or the computer, depending on the result. */
+function incrementScore(){
+    if (result === "playerWin"){
+        playerScore++;
+        let playerScoreLabel = document.getElementById("player-score");
+        playerScoreLabel.textContent = `Player Score: ${playerScore}`;
+    } else if (result === "computerWin"){
+        computerScore++;
+        let computerScoreLabel = document.getElementById("computer-score");
+        computerScoreLabel.textContent = `Computer Score: ${computerScore}`;
+    } else {
+        console.log("Game was a draw");
 }
