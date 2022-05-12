@@ -28,6 +28,7 @@ function startGame(){
     displayComputerImage(computerWeapon);
     calculateWinner();
     console.log(result);
+    winnerMessage();
 }
 
 let computerWeapon;
@@ -113,3 +114,13 @@ function displayComputerImage(computerWeapon){
     `;
 }
 
+function winnerMessage(){
+    let winnerMessage = document.getElementsByTagName("span")[0];
+    if (result === "playerWin"){
+        winnerMessage.textContent = "Player wins";
+    } else if (result === "computerWin"){
+        winnerMessage.textContent = "Computer wins";
+    } else {
+        winnerMessage.textContent = "Draw";
+    }
+}
