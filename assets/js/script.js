@@ -20,14 +20,16 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function startGame(){
     alert("You started the game");
-
+    genComputerWeapon();
+    displayComputerImage(computerWeapon);
 }
+
+let computerWeapon;
 
 /** Generates a random number between 1 and 5. Each number corresponds to a different weapon variable. */
 function genComputerWeapon(){
     let randomNumber = Math.floor(Math.random() * 5) + 1;
-    
-    let computerWeapon;
+    console.log(randomNumber);
 
     if (randomNumber === 1){
         computerWeapon = "rock";
@@ -40,6 +42,8 @@ function genComputerWeapon(){
     } else {
         computerWeapon = "spock";
     }
+
+    console.log(computerWeapon);
 }
 
 /** Will use conditions to calculate if the game is a player win, draw or computer win */
@@ -93,6 +97,14 @@ function displayWeaponImage(weaponChoice){
     let playerWeaponDiv = document.getElementById("player-weapon-div");
     playerWeaponDiv.innerHTML = `
         <img src="/assets/images/${weaponChoice}.png" alt="${weaponChoice} image" width="auto" height="100%"></img>
+    `;
+}
+
+/** Will add an image element to the html to show an image of the weapon selected by the computer */
+function displayComputerImage(computerWeapon){
+    let computerWeaponDiv = document.getElementById("computer-weapon-div");
+    computerWeaponDiv.innerHTML = `
+        <img src="/assets/images/${computerWeapon}.png" alt="${computerWeapon} image" width="auto" height="100%"></img>
     `;
 }
 
