@@ -157,7 +157,12 @@ h3 {
     margin-left: 15%;
 }
 
-#center-container span {
+#winner-message {
     font-size: 1.5rem;
     font-weight: 600;
+    width:100%;
+}
+
+#games-remaining {
+    width: 100%;
 }
