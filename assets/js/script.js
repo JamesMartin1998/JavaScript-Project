@@ -157,3 +157,4 @@ function incrementScore(){
     } else {
         console.log("Game was a draw");
 }
+}
