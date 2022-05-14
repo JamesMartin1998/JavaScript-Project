@@ -40,6 +40,7 @@ function startGame(){
     updateGamesRemaining();
     if (gamesRemaining === 0) {
         calculateTotalWinner();
+        popUp();
     }
 }
 
@@ -183,3 +184,8 @@ function calculateTotalWinner() {
     }
 }
 
+/** Will cause a pop up to appear by changing the section display from none to block */
+function popUp() {
+    let popUp = document.getElementById("pop-up");
+    popUp.style.display = "flex";
+}
