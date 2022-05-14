@@ -8,6 +8,7 @@
  let playerScore = 0;
  let computerScore = 0;
  let gamesRemaining = 5;
+ let overallWinner;
 
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
@@ -37,6 +38,9 @@ function startGame(){
     incrementScore();
     gamesRemaining--;
     updateGamesRemaining();
+    if (gamesRemaining === 0) {
+        calculateTotalWinner();
+    }
 }
 
 let computerWeapon;
@@ -167,3 +171,15 @@ function updateGamesRemaining(){
     let gamesRemainingHtml = document.getElementById("games-remaining");
     gamesRemainingHtml.textContent = `Games Remaining: ${gamesRemaining}`;
 }
+
+/** Calculates who wins the most games and assigns the result to overallWinner variable */
+function calculateTotalWinner() {
+    if (playerScore > computerScore){
+        overallWinner = "player";
+    } else if (computerScore > playerScore) {
+        overallWinner = "computer";
+    } else {
+        console.log("It's a draw");
+    }
+}
+
