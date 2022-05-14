@@ -7,6 +7,7 @@
  let result;
  let playerScore = 0;
  let computerScore = 0;
+ let gamesRemaining = 5;
 
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
@@ -34,6 +35,8 @@ function startGame(){
     console.log(result);
     winnerMessage();
     incrementScore();
+    gamesRemaining--;
+    updateGamesRemaining();
 }
 
 let computerWeapon;
@@ -157,4 +160,10 @@ function incrementScore(){
     } else {
         console.log("Game was a draw");
 }
+}
+
+/** Changes the text content of the games-remaining div. */
+function updateGamesRemaining(){
+    let gamesRemainingHtml = document.getElementById("games-remaining");
+    gamesRemainingHtml.textContent = `Games Remaining: ${gamesRemaining}`;
 }
