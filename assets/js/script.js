@@ -128,7 +128,7 @@ function removeComputerImage(){
 
 /** Gets the span and changes the text content to show the game winner */
 function winnerMessage(){
-    let winnerMessage = document.getElementsByTagName("span")[0];
+    let winnerMessage = document.getElementById("winner-message");
     if (result === "playerWin"){
         winnerMessage.textContent = "Player wins";
     } else if (result === "computerWin"){
@@ -140,7 +140,7 @@ function winnerMessage(){
 
 /** Clears the winner message */
 function clearWinnerMessage(){
-    let winnerMessage = document.getElementsByTagName("span")[0];
+    let winnerMessage = document.getElementById("winner-message");
     winnerMessage.textContent = "";
 }
 
