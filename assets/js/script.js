@@ -41,6 +41,7 @@ function startGame(){
     if (gamesRemaining === 0) {
         calculateTotalWinner();
         popUp();
+        mostWinsMessage();
     }
 }
 
@@ -188,4 +189,14 @@ function calculateTotalWinner() {
 function popUp() {
     let popUp = document.getElementById("pop-up");
     popUp.style.display = "flex";
+}
+
+/** Changes the overall-winner HTML to declare who won the most games. */
+function mostWinsMessage() {
+    let overallMessage = document.getElementById("overall-winner");
+    if (overallWinner === "player" || overallWinner === "computer") {
+        overallMessage.textContent = `${overallWinner} wins overall!`;
+    } else {
+        overallMessage.textContent = `It's a draw!`;
+    }
 }
