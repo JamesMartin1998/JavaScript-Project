@@ -196,7 +196,8 @@ function mostWinsMessage() {
     let overallMessage = document.getElementById("overall-winner");
     if (overallWinner === "player" || overallWinner === "computer") {
         overallMessage.textContent = `${overallWinner} wins overall!`;
+        overallMessage.style.textTransform = "capitalize";
     } else {
-        overallMessage.textContent = `It's a draw!`;
+        overallMessage.textContent = `It's A Draw!`;
     }
 }

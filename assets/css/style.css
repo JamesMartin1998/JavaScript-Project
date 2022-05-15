@@ -180,7 +180,22 @@ h3 {
     display: none;
 }
 
-#pop-up div {
+#pop-up > div {
     width: 50%;
     background: gold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 35%;
+}
+
+#pop-up img {
+    width:50%;
+    height:auto;
+    margin: 0 auto;
+}
+
+#pop-up > div > div {
+    margin:0 auto;
+    font-size: 1.5rem;
 }
