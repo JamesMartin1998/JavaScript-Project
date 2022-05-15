@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function(){
     for (let button of buttons){
         button.addEventListener("click", function(){
             if (this.getAttribute("data-type") === "submit"){
-                startGame();
+                if (weaponChoice === undefined) {
+                    alert("You must choose a weapon before fighting")
+                } else {
+                    startGame();
+                }
             }else{
                 weaponChoice = this.getAttribute("data-type");
                 alert(`You selected ${weaponChoice}`)
