@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function(){
                 }
             }else{
                 weaponChoice = this.getAttribute("data-type");
-                alert(`You selected ${weaponChoice}`)
                 displayWeaponImage(weaponChoice);
                 removeComputerImage();
                 clearWinnerMessage();
@@ -33,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 function startGame(){
-    alert("You started the game");
     genComputerWeapon();
     displayComputerImage(computerWeapon);
     calculateWinner();
