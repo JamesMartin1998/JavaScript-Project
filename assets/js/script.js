@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", function(){
                 } else {
                     startGame();
                 }
-            }else{
+            } else if (this.getAttribute("data-type") === "close"){
+                closePopUp();
+            } else{
                 weaponChoice = this.getAttribute("data-type");
                 displayWeaponImage(weaponChoice);
                 removeComputerImage();
@@ -191,6 +193,12 @@ function calculateTotalWinner() {
 function popUp() {
     let popUp = document.getElementById("pop-up");
     popUp.style.display = "flex";
+}
+
+/** Closes the pop up */
+function closePopUp() {
+    let popUp = document.getElementById("pop-up");
+    popUp.style.display = "none";
 }
 
 /** Changes the overall-winner HTML to declare who won the most games. */
