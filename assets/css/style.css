@@ -177,16 +177,33 @@ h3 {
     z-index: 2;
     width:100%;
     height:100vh;
-    display: none;
+    /* display: none; */
 }
 
 #pop-up > div {
-    width: 50%;
+    width: 40%;
     background: gold;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-radius: 35%;
+    position: relative;
+}
+
+#close {
+    position: absolute;
+    top:1%;
+    right:1%;
+    width: 2.1rem;
+    height: 2.1rem;
+    background: rgb(223, 223, 223);
+}
+
+#close:hover {
+    background: rgb(232, 0, 0);
+}
+
+i {
+    font-size: 2rem;
 }
 
 #pop-up img {
