@@ -261,6 +261,11 @@ h3 {
     font-weight: 600;
 }
 
+.game-images {
+    width: 55%;
+    height: auto;
+}
+
 /* Game section media queries */
 
 @media only screen and (max-width:750px){
