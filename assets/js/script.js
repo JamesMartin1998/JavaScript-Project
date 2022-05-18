@@ -251,4 +251,5 @@ function resetGame() {
     clearWinnerMessage();
     removeComputerImage();
     removePlayerImage();
+    weaponChoice = undefined;
 }
