@@ -23,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function(){
                 }
             } else if (this.getAttribute("data-type") === "close"){
                 closePopUp();
+                resetGame();
+            } else if (this.getAttribute("data-type") === "reset"){
+                resetGame();
             } else{
                 weaponChoice = this.getAttribute("data-type");
                 displayWeaponImage(weaponChoice);
@@ -210,4 +213,15 @@ function mostWinsMessage() {
     } else {
         overallMessage.textContent = `It's A Draw!`;
     }
+}
+
+function resetGame() {
+    gamesRemaining = 5;
+    playerScore = 0;
+    computerScore = 0;
+    let playerScoreLabel = document.getElementById("player-score");
+    playerScoreLabel.textContent = `Player Score: ${playerScore}`;
+    let computerScoreLabel = document.getElementById("computer-score");
+    computerScoreLabel.textContent = `Computer Score: ${computerScore}`;
+    updateGamesRemaining();
 }
