@@ -216,6 +216,12 @@ h2 {
     text-align: center;
 }
 
+#center-container-mobile {
+    background: blue;
+    width:100%;
+    text-align: center;
+}
+
 #right-container {
     background: yellow;
     width:40%;

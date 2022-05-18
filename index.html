@@ -50,26 +50,32 @@
             <button id="reset" data-type="reset">Reset</button>
         </div>
     </section>
-    <section class="flex flex-row" id="game-section">
-        <div id="left-container">
-            <h2>Player</h2>
-            <div id="player-weapon-div" class="flex flex-center">
-
+    <section id="game-section">
+        <div class="flex flex-row">
+            <div id="left-container">
+                <h2>Player</h2>
+                <div id="player-weapon-div" class="flex flex-center">
+    
+                </div>
+                <h3 id="player-score">Player Score: 0</h3>
             </div>
-            <h3 id="player-score">Player Score: 0</h3>
+            <div id="center-container" class="flex flex-center">
+                <div>
+                    <div id="winner-message"></div>
+                    <div id="games-remaining">Games Remaining: 5</div>
+                </div>
+            </div>
+            <div id="right-container">
+                <h2>Computer</h2>
+                <div id="computer-weapon-div" class="flex flex-center">
+    
+                </div>
+                <h3 id="computer-score">Computer Score: 0</h3>
+            </div>
         </div>
-        <div id="center-container" class="flex flex-center">
-            <div>
-                <div id="winner-message"></div>
-                <div id="games-remaining">Games Remaining: 5</div>
-            </div>
-        </div>
-        <div id="right-container">
-            <h2>Computer</h2>
-            <div id="computer-weapon-div" class="flex flex-center">
-
-            </div>
-            <h3 id="computer-score">Computer Score: 0</h3>
+        <div id="center-container-mobile">
+            <div id="winner-message-mobile"></div>
+            <div id="games-remaining-mobile">Games Remaining: 5</div>
         </div>
     </section>
     <section id="pop-up" class="flex flex-center">
