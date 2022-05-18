@@ -145,6 +145,12 @@ function displayComputerImage(computerWeapon) {
     `;
 }
 
+/** Removes the player weapon image */
+function removePlayerImage(){
+    let playerWeaponDiv = document.getElementById("player-weapon-div");
+    playerWeaponDiv.innerHTML = "";
+}
+
 /** Removes the computer weapon image */
 function removeComputerImage() {
     let computerWeaponDiv = document.getElementById("computer-weapon-div");
@@ -242,4 +248,7 @@ function resetGame() {
     let computerScoreLabel = document.getElementById("computer-score");
     computerScoreLabel.textContent = `Computer Score: ${computerScore}`;
     updateGamesRemaining();
+    clearWinnerMessage();
+    removeComputerImage();
+    removePlayerImage();
 }
