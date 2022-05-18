@@ -3,15 +3,15 @@
  *  If a weapon button is pressed, it will be stored in a variable. If the fight button is pressed, it will call the startGame function.
  */
 
- let weaponChoice;
- let result;
- let playerScore = 0;
- let computerScore = 0;
- let gamesRemaining = 5;
- let overallWinner;
+let weaponChoice;
+let result;
+let playerScore = 0;
+let computerScore = 0;
+let gamesRemaining = 5;
+let overallWinner;
 
 
- /* Event listener code from https://stackoverflow.com/questions/5629805/disabling-enter-key-for-form */
+/* Event listener code from https://stackoverflow.com/questions/5629805/disabling-enter-key-for-form */
 document.addEventListener('keypress', function (e) {
     if (e.keyCode === 13 || e.which === 13) {
         e.preventDefault();
@@ -19,23 +19,23 @@ document.addEventListener('keypress', function (e) {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
-    for (let button of buttons){
-        button.addEventListener("click", function(){
-            if (this.getAttribute("data-type") === "submit"){
+    for (let button of buttons) {
+        button.addEventListener("click", function () {
+            if (this.getAttribute("data-type") === "submit") {
                 if (weaponChoice === undefined) {
                     alert("You must choose a weapon before fighting")
                 } else {
                     startGame();
                 }
-            } else if (this.getAttribute("data-type") === "close"){
+            } else if (this.getAttribute("data-type") === "close") {
                 closePopUp();
                 resetGame();
-            } else if (this.getAttribute("data-type") === "reset"){
+            } else if (this.getAttribute("data-type") === "reset") {
                 resetGame();
-            } else{
+            } else {
                 weaponChoice = this.getAttribute("data-type");
                 displayWeaponImage(weaponChoice);
                 removeComputerImage();
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 })
 
-function startGame(){
+function startGame() {
     genComputerWeapon();
     displayComputerImage(computerWeapon);
     calculateWinner();
@@ -85,43 +85,43 @@ function genComputerWeapon() {
 }
 
 /** Will use conditions to calculate if the game is a player win, draw or computer win */
-function calculateWinner(){
-    if (weaponChoice === "rock"){
-        if (computerWeapon === "lizard" || computerWeapon === "scissors"){
+function calculateWinner() {
+    if (weaponChoice === "rock") {
+        if (computerWeapon === "lizard" || computerWeapon === "scissors") {
             result = "playerWin"
-        } else if (computerWeapon === "rock"){
+        } else if (computerWeapon === "rock") {
             result = "draw";
         } else {
             result = "computerWin"
         }
-    } else if (weaponChoice === "scissors"){
-        if (computerWeapon === "paper" || computerWeapon === "lizard"){
+    } else if (weaponChoice === "scissors") {
+        if (computerWeapon === "paper" || computerWeapon === "lizard") {
             result = "playerWin";
-        } else if (computerWeapon === "scissors"){
+        } else if (computerWeapon === "scissors") {
             result = "draw";
         } else {
             result = "computerWin";
         }
-    } else if (weaponChoice === "paper"){
-        if (computerWeapon === "rock" || computerWeapon === "spock"){
+    } else if (weaponChoice === "paper") {
+        if (computerWeapon === "rock" || computerWeapon === "spock") {
             result = "playerWin";
-        } else if (computerWeapon === "paper"){
+        } else if (computerWeapon === "paper") {
             result = "draw";
         } else {
             result = "computerWin"
         }
-    } else if (weaponChoice === "lizard"){
-        if (computerWeapon === "spock" || computerWeapon === "paper"){
+    } else if (weaponChoice === "lizard") {
+        if (computerWeapon === "spock" || computerWeapon === "paper") {
             result = "playerWin";
-        } else if (computerWeapon === "lizard"){
+        } else if (computerWeapon === "lizard") {
             result = "draw";
         } else {
             result = "computerWin"
         }
     } else {
-        if (computerWeapon === "scissors" || computerWeapon === "rock"){
+        if (computerWeapon === "scissors" || computerWeapon === "rock") {
             result = "playerWin";
-        } else if (computerWeapon === "spock"){
+        } else if (computerWeapon === "spock") {
             result = "draw";
         } else {
             result = "computerWin";
@@ -130,7 +130,7 @@ function calculateWinner(){
 }
 
 /** Will add an image element to the html to show an image of the weapon selected by the player */
-function displayWeaponImage(weaponChoice){
+function displayWeaponImage(weaponChoice) {
     let playerWeaponDiv = document.getElementById("player-weapon-div");
     playerWeaponDiv.innerHTML = `
         <img src="/assets/images/${weaponChoice}.png" alt="${weaponChoice} image" width="auto" height="100%"></img>
@@ -138,7 +138,7 @@ function displayWeaponImage(weaponChoice){
 }
 
 /** Will add an image element to the html to show an image of the weapon selected by the computer */
-function displayComputerImage(computerWeapon){
+function displayComputerImage(computerWeapon) {
     let computerWeaponDiv = document.getElementById("computer-weapon-div");
     computerWeaponDiv.innerHTML = `
         <img src="/assets/images/${computerWeapon}.png" alt="${computerWeapon} image" width="auto" height="100%"></img>
@@ -146,18 +146,18 @@ function displayComputerImage(computerWeapon){
 }
 
 /** Removes the computer weapon image */
-function removeComputerImage(){
+function removeComputerImage() {
     let computerWeaponDiv = document.getElementById("computer-weapon-div");
     computerWeaponDiv.innerHTML = "";
 }
 
 
 /** Gets the span and changes the text content to show the game winner */
-function winnerMessage(){
+function winnerMessage() {
     let winnerMessage = document.getElementById("winner-message");
-    if (result === "playerWin"){
+    if (result === "playerWin") {
         winnerMessage.textContent = "Player wins";
-    } else if (result === "computerWin"){
+    } else if (result === "computerWin") {
         winnerMessage.textContent = "Computer wins";
     } else {
         winnerMessage.textContent = "Draw";
@@ -165,35 +165,35 @@ function winnerMessage(){
 }
 
 /** Clears the winner message */
-function clearWinnerMessage(){
+function clearWinnerMessage() {
     let winnerMessage = document.getElementById("winner-message");
     winnerMessage.textContent = "";
 }
 
 /** Increments the score for either the player or the computer, depending on the result. */
-function incrementScore(){
-    if (result === "playerWin"){
+function incrementScore() {
+    if (result === "playerWin") {
         playerScore++;
         let playerScoreLabel = document.getElementById("player-score");
         playerScoreLabel.textContent = `Player Score: ${playerScore}`;
-    } else if (result === "computerWin"){
+    } else if (result === "computerWin") {
         computerScore++;
         let computerScoreLabel = document.getElementById("computer-score");
         computerScoreLabel.textContent = `Computer Score: ${computerScore}`;
     } else {
         console.log("Game was a draw");
-}
+    }
 }
 
 /** Changes the text content of the games-remaining div. */
-function updateGamesRemaining(){
+function updateGamesRemaining() {
     let gamesRemainingHtml = document.getElementById("games-remaining");
     gamesRemainingHtml.textContent = `Games Remaining: ${gamesRemaining}`;
 }
 
 /** Calculates who wins the most games and assigns the result to overallWinner variable */
 function calculateTotalWinner() {
-    if (playerScore > computerScore){
+    if (playerScore > computerScore) {
         overallWinner = "player";
     } else if (computerScore > playerScore) {
         overallWinner = "computer";
