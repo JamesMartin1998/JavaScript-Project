@@ -256,13 +256,17 @@ h3 {
 
 /* Game section media queries */
 
-@media only screen and (max-width:700px){
-    #game-section{
-        flex-direction: column;
+@media only screen and (max-width:750px){
+    #center-container {
+        display: none;
     }
 
-    #game-section > div{
-        width: 100%;
+    #left-container {
+        width: 50%;
+    }
+
+    #right-container {
+        width:50%;
     }
 }
 
