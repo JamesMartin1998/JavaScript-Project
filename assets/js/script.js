@@ -155,12 +155,16 @@ function removeComputerImage() {
 /** Gets the span and changes the text content to show the game winner */
 function winnerMessage() {
     let winnerMessage = document.getElementById("winner-message");
+    let winnerMessageMobile = document.getElementById("winner-message-mobile");
     if (result === "playerWin") {
         winnerMessage.textContent = "Player wins";
+        winnerMessageMobile.textContent = "Player wins";
     } else if (result === "computerWin") {
         winnerMessage.textContent = "Computer wins";
+        winnerMessageMobile.textContent = "Computer wins";
     } else {
         winnerMessage.textContent = "Draw";
+        winnerMessageMobile.textContent = "Draw";
     }
 }
 
@@ -168,6 +172,8 @@ function winnerMessage() {
 function clearWinnerMessage() {
     let winnerMessage = document.getElementById("winner-message");
     winnerMessage.textContent = "";
+    let winnerMessageMobile = document.getElementById("winner-message-mobile");
+    winnerMessageMobile.textContent = "";
 }
 
 /** Increments the score for either the player or the computer, depending on the result. */
@@ -189,6 +195,8 @@ function incrementScore() {
 function updateGamesRemaining() {
     let gamesRemainingHtml = document.getElementById("games-remaining");
     gamesRemainingHtml.textContent = `Games Remaining: ${gamesRemaining}`;
+    let gamesRemainingHtmlMobile = document.getElementById("games-remaining-mobile");
+    gamesRemainingHtmlMobile.textContent = `Games Remaining: ${gamesRemaining}`;
 }
 
 /** Calculates who wins the most games and assigns the result to overallWinner variable */
