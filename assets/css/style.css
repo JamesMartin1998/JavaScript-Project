@@ -240,6 +240,14 @@ h3 {
     margin-left: 15%;
 }
 
+#left-container h2, #right-container h2 {
+    margin-bottom: 10%;
+}
+
+#left-container h3, #right-container h3 {
+    margin-top: 10%;
+}
+
 #winner-message {
     font-size: 1.5rem;
     font-weight: 600;
