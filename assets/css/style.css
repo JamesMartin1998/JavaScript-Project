@@ -234,17 +234,9 @@ h3 {
     margin: 0;
 }
 
-#left-container div {
+#left-container div, #right-container div {
     background:purple;
     width: 70%;
-    height: 15rem;
-    margin-left: 15%;
-}
-
-#right-container div {
-    background:purple;
-    width: 70%;
-    height: 15rem;
     margin-left: 15%;
 }
 
@@ -267,6 +259,12 @@ h3 {
 }
 
 /* Game section media queries */
+
+@media only screen and (max-width:1250px) {
+    .game-images {
+        width
+    }
+}
 
 @media only screen and (max-width:750px){
     #center-container {
