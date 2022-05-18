@@ -241,11 +241,11 @@ h3 {
 }
 
 #left-container h2, #right-container h2 {
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 #left-container h3, #right-container h3 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 #winner-message {
@@ -267,6 +267,13 @@ h3 {
 }
 
 /* Game section media queries */
+
+@media only screen and (max-width:1250px){
+    #left-container div, #right-container div {
+        width: 100%;
+        margin: 0;
+    }
+}
 
 @media only screen and (max-width:750px){
     #center-container {
