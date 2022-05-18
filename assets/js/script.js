@@ -10,6 +10,15 @@
  let gamesRemaining = 5;
  let overallWinner;
 
+
+ /* Event listener code from https://stackoverflow.com/questions/5629805/disabling-enter-key-for-form */
+document.addEventListener('keypress', function (e) {
+    if (e.keyCode === 13 || e.which === 13) {
+        e.preventDefault();
+        return false;
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
 
@@ -49,6 +58,7 @@ function startGame(){
         calculateTotalWinner();
         popUp();
         mostWinsMessage();
+
     }
 }
 

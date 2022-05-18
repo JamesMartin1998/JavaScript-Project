@@ -203,6 +203,8 @@ h2 {
     }
 }
 
+/* Game section */
+
 #left-container {
     background: red;
     width:40%;
@@ -254,6 +256,18 @@ h3 {
 
 #reset {
     margin-top: 10%;
+}
+
+/* Game section media queries */
+
+@media only screen and (max-width:700px){
+    #game-section{
+        flex-direction: column;
+    }
+
+    #game-section > div{
+        width: 100%;
+    }
 }
 
 #pop-up {
