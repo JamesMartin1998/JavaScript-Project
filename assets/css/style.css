@@ -220,6 +220,7 @@ h2 {
     background: blue;
     width:100%;
     text-align: center;
+    display:none;
 }
 
 #right-container {
@@ -273,6 +274,10 @@ h3 {
 
     #right-container {
         width:50%;
+    }
+
+    #center-container-mobile {
+        display: block;
     }
 }
 
