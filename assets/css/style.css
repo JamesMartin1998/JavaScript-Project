@@ -122,7 +122,6 @@ header li > a:hover{
 
 #landing-container {
     width:100%;
-    background:green;
     font-size: 1.2rem;
 }
 
@@ -141,14 +140,6 @@ header li > a:hover{
     box-sizing: border-box;
     border:4px solid rgb(37, 70, 254);
     padding: 1rem;
-}
-
-#about-game-container {
-    background: red;
-}
-
-#rules-container {
-    background: blue;
 }
 
 #about-game {
@@ -185,7 +176,6 @@ footer {
 
 footer ul {
     list-style: none;
-    background: red;
     padding: 0;
 }
 
@@ -197,6 +187,10 @@ footer li {
 
 footer a {
     color:white;
+}
+
+footer i {
+    font-size: 3rem;
 }
 
 /* Play game page */
