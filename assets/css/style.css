@@ -151,10 +151,6 @@ header li > a:hover{
     font-size: 1.2rem;
 }
 
-#about-game {
-    justify-content: flex-start;
-}
-
 #about-game > div {
     justify-content: flex-start;
     height: auto;
@@ -167,6 +163,16 @@ header li > a:hover{
 
 #about-game p {
     width:80%;
+}
+
+@media only screen and (max-width:900px){
+    #landing-container {
+        flex-direction: flex-column;
+    }
+
+    #about-game, #rules {
+        width:100%;
+    }
 }
 
 /* Rules section */
