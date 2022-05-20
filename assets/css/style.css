@@ -120,65 +120,33 @@ header li > a:hover{
 
 /* Landing Page */
 
-#landing-container{
+#landing-container {
     width:100%;
-    padding-top:2rem;
-    align-items: flex-start;
+    background:green;
+    height: 50rem;
 }
 
-/* About game section */
-
-#about-game, #rules {
+#landing-container > div {
     width:50%;
-}
-
-#about-game > div{
-    margin-left:1.5rem;
-}
-
-#rules > div {
-    margin-right:1.5rem;
-}
-
-.yellow-div {
-    background: rgb(248, 255, 48);
-    width:90%;
     height:100%;
-    padding:1rem;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 4px solid rgb(37, 70, 254);
-    font-size: 1.2rem;
 }
 
-#about-game > div {
-    justify-content: flex-start;
-    height: auto;
+#about-game {
+    background: red;
 }
 
-#about-game iframe {
-    width: 80%;
-    height:20rem;
+#rules {
+    background: blue;
 }
 
-#about-game p {
-    width:80%;
-}
-
-@media only screen and (max-width:900px){
+@media only screen and (max-width: 900px){
     #landing-container {
-        flex-direction: flex-column;
+        flex-direction: column;
     }
 
-    #about-game, #rules {
-        width:100%;
+    #landing-container > div {
+        width: 100%;
     }
-}
-
-/* Rules section */
-
-#rules img {
-    width:80%;
 }
 
 /* Play game page */
