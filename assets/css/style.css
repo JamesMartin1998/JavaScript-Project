@@ -193,6 +193,21 @@ footer i {
     font-size: 3rem;
 }
 
+@media only screen and (max-width: 450px){
+    footer i{
+        font-size:2.5rem;
+    }
+
+    footer li {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    footer iframe {
+        height: 10rem;
+    }
+}
+
 /* Play game page */
 
 /* Choose weapon section */
