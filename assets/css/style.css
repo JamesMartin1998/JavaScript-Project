@@ -55,6 +55,14 @@ header li > a {
     text-decoration: none;
 }
 
+.active {
+    text-decoration: underline;
+}
+
+header li > a:hover{
+    text-decoration: underline;
+}
+
 @media only screen and (max-width:750px){
     h1{
         font-size: 1.8em;
