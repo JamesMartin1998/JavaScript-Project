@@ -122,6 +122,8 @@ header li > a:hover{
 
 #landing-container{
     width:100%;
+    padding-top:2rem;
+    align-items: flex-start;
 }
 
 /* About game section */
@@ -130,11 +132,18 @@ header li > a:hover{
     width:50%;
 }
 
+#about-game > div{
+    margin-left:1.5rem;
+}
+
+#rules > div {
+    margin-right:1.5rem;
+}
+
 .yellow-div {
     background: rgb(248, 255, 48);
     width:90%;
     height:100%;
-    margin-top: 2rem;
     padding:1rem;
     box-sizing: border-box;
     border-radius: 10px;
@@ -142,15 +151,28 @@ header li > a:hover{
     font-size: 1.2rem;
 }
 
+#about-game {
+    justify-content: flex-start;
+}
+
+#about-game > div {
+    justify-content: flex-start;
+    height: auto;
+}
+
 #about-game iframe {
-    width: 60%;
+    width: 80%;
     height:20rem;
+}
+
+#about-game p {
+    width:80%;
 }
 
 /* Rules section */
 
 #rules img {
-    width:60%;
+    width:80%;
 }
 
 /* Play game page */
