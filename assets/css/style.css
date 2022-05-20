@@ -120,15 +120,20 @@ header li > a:hover{
 
 /* Landing Page */
 
+#landing-container{
+    width:100%;
+}
+
 /* About game section */
 
-#about-game{
-    width: 100%;
+#about-game, #rules {
+    width:50%;
 }
 
 .yellow-div {
     background: rgb(248, 255, 48);
-    width:70%;
+    width:90%;
+    height:100%;
     margin-top: 2rem;
     padding:1rem;
     box-sizing: border-box;
@@ -143,15 +148,6 @@ header li > a:hover{
 }
 
 /* Rules section */
-
-#rules {
-    margin-top: 2rem;
-    width: 100%;
-}
-
-#rules > div {
-    margin-top: 0;
-}
 
 #rules img {
     width:60%;
