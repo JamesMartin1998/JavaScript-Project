@@ -126,20 +126,38 @@ header li > a:hover{
     width: 100%;
 }
 
-#about-game > div {
+.yellow-div {
     background: rgb(248, 255, 48);
     width:70%;
-    margin-top: 2%;
+    margin-top: 2rem;
     padding:1rem;
     box-sizing: border-box;
     border-radius: 10px;
     border: 4px solid rgb(37, 70, 254);
+    font-size: 1.2rem;
 }
 
 #about-game iframe {
     width: 60%;
     height:20rem;
 }
+
+/* Rules section */
+
+#rules {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+#rules > div {
+    margin-top: 0;
+}
+
+#rules img {
+    width:60%;
+}
+
+/* Play game page */
 
 /* Choose weapon section */
 
