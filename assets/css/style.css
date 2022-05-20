@@ -123,19 +123,26 @@ header li > a:hover{
 #landing-container {
     width:100%;
     background:green;
-    height: 50rem;
 }
 
 #landing-container > div {
     width:50%;
     height:100%;
+    box-sizing: border-box;
 }
 
-#about-game {
+#landing-container > div > div {
+    width: 90%;
+    height: 90%;
+    background: yellow;
+    margin: 5%;
+}
+
+#about-game-container {
     background: red;
 }
 
-#rules {
+#rules-container {
     background: blue;
 }
 
