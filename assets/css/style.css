@@ -464,14 +464,15 @@ h3 {
     background:purple;
     width: 70%;
     margin-left: 15%;
+    min-height:30rem;
 }
 
 #left-container h2, #right-container h2 {
-    margin-bottom: 5%;
+    margin-bottom: 1rem;
 }
 
 #left-container h3, #right-container h3 {
-    margin-top: 5%;
+    margin-top: 1rem;
 }
 
 #winner-message {
