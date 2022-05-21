@@ -235,6 +235,16 @@ h2 {
     text-align: center;
 }
 
+#game-section h2{
+    background: yellow;
+    width:50%;
+    margin: 0 auto;
+    min-width: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 10px;
+}
+
 .weapon-btn {
     width:7rem;
     height:7rem;
@@ -427,25 +437,21 @@ h2 {
 /* Game section */
 
 #left-container {
-    background: red;
     width:40%;
 }
 
 #center-container {
-    background: blue;
     width:20%;
     text-align: center;
 }
 
 #center-container-mobile {
-    background: blue;
     width:100%;
     text-align: center;
     display:none;
 }
 
 #right-container {
-    background: yellow;
     width:40%;
 }
 
@@ -456,7 +462,6 @@ h3 {
 }
 
 #left-container div, #right-container div {
-    background:purple;
     width: 70%;
     margin-left: 15%;
     min-height:15rem;
