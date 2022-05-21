@@ -459,7 +459,7 @@ h3 {
     background:purple;
     width: 70%;
     margin-left: 15%;
-    min-height:30rem;
+    min-height:15rem;
 }
 
 #left-container h2, #right-container h2 {
@@ -512,6 +512,10 @@ h3 {
 
     #center-container-mobile {
         display: block;
+    }
+
+    #left-container div, #right-container div {
+        min-height: 10rem;
     }
 }
 
