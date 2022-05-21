@@ -256,11 +256,44 @@ h2 {
     margin: 0%;
 }
 
-.submit-btn {
-    width: 5rem;
+#submit-btn {
+    width: 8rem;
     height: 3rem;
     border-radius: 10px;
-    background: red;
+    background: rgb(37, 70, 254);
+    margin-right: 5rem;
+    font-size: 1.2rem;
+    margin-bottom:1rem;
+    border-color:rgb(37, 70, 254);
+    transition-property: width height margin;
+    transition-duration: 0.5s;
+}
+
+#reset {
+    width: 8rem;
+    height:3rem;
+    border-radius: 10px;
+    background: rgb(255, 23, 23);
+    font-size: 1.2rem;
+    border-color: rgb(255, 23, 23);
+    margin-bottom:1rem;
+    margin-left:5rem;
+    transition-property: width height margin;
+    transition-duration: 0.5s;
+}
+
+#reset:hover, #submit-btn:hover{
+    width:9rem;
+    height: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#submit-btn:hover{
+    margin-right:4rem;
+}
+
+#reset:hover{
+    margin-left: 4rem;
 }
 
 .btn {
