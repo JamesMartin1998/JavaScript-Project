@@ -237,10 +237,7 @@ function mostWinsMessage() {
         overallMessage.style.textTransform = "capitalize";
     } else {
         overallMessage.textContent = `It's A Draw!`;
-        let popUpImage = document.getElementById("pop-up-image");
-        popUpImage.innerHTML = `
-        <img id="pop-up-image" src="/assets/images/handshake.png" alt="handshake image">
-        `;
+        document.getElementById("pop-up-image").src = "/assets/images/handshake.png";
     }
 }
 
