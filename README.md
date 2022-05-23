@@ -36,3 +36,12 @@ The target audience for the project would include people that have heard about t
 
 The 'About the Game' section sits adjacently to the 'How to Play' section. Both have equal widths and use a yellow background and blue text to produce a consistent color theme. The colors are also complementary to each other. 
 On smaller devices, the 'How to Play' section moves vertically underneath the 'About the Game' section to provide more horizontal space to each section. This was achieved by changing the flex-direction property to column for their parent element.
+
+- Footer Section
+    - This section aims to promote users to find out more about the game through social media
+    - This section follows the same design theme as the navigation bar for consistency
+    - Social links are included as icons from FontAwesome
+    - When clicked, the links open in a new tab for a good user experience
+    - code for this section was used from Code Institute's Love Running Project
+
+![Image showing the Footer Section](/assets/images/footer.png)
