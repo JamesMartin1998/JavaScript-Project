@@ -48,8 +48,25 @@ On smaller devices, the 'How to Play' section moves vertically underneath the 'A
 
 - Choose Weapon Section
     - This section is one of two sections for the game. It allows the user to choose their weapon for the game, start the game and reset the game
-    - Five circular buttons are used with background images to clealy show users the weapon
+    - Five circular buttons are used with background images to clealy show users the weapon and the heading informs the user to make a selection
     - A hover effect is used on the weapon buttons to enlarge them
     - When users click a weapon button, the user will be able to an image of their weapon in the game section appear
     - The 'fight!' button is used to start the game. If it is pressed before a weapon has been selected by the user, the user will receive an alert to tell them they need to select a weapon before starting a game. Consequently, the game will not start and the user has freedom to choose a weapon. If it is clicked after a weapon has been chosen, the game will start. The user will see an image of the computer's weapon, a result message and updates to the player score, computer score and games remaining in the game section
-    - The 'reset' button is used to 
+    - The 'reset' button uses a strong red color so it can stand out to the user
+    - Clicking the reset button will reset the game by removing any weapon selections for the player and computer, resetting the player score and computer score to zero and finally by resetting the games remaining to five
+
+![Image showing the Choose Weapon Section](/assets/images/choose-weapon.png)
+
+- Game Section
+    - This is the second section of the game. It shows the user the weapons selected, results, scores and games remaining
+    - The headings with yellow backgrounds stand out to show the user where information for both the player and computer is located
+    - The player information is located on the left, computer information on the right and result and games remaining information is in the center to provide clear, distinct sections to user
+    - On smaller devices, the result and games remaining information moves under the player score and computer score. This is achieved by having duplicate div elements and altering their displays to none to hide one duplicate
+    - The player weapon image is shown if the player has clicked a weapon button in the 'Choose Weapon Section'. If the player hasn't clicked a weapon button, a white space will represent where the image should appear
+    - The computer weapon image is shown if the player has clicked the 'fight!' button
+    - If the player has pressed the 'fight!' button, a result message will appear in the center of the section to inform the player of outcome of the round
+    - If the player has pressed the 'fight!' button, the player score or computer score will increment by one, depending on the result. In the event of a draw, neither will increment
+    - If the player has pressed the 'fight!' button, the games remaining will decrease by one
+    - If the games remaining reaches zero, the game is finished and a pop up will appear over the game section to inform the user of the overall result
+
+![Image showing the Game Section](/assets/images/game-section.png)
