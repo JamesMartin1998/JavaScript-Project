@@ -530,7 +530,7 @@ h3 {
 
 #pop-up > div {
     width: 40%;
-    background: gold;
+    background: rgb(170, 220, 253);
     display: flex;
     justify-content: center;
     flex-direction: column;

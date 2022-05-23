@@ -254,4 +254,5 @@ function resetGame() {
     removeComputerImage();
     removePlayerImage();
     weaponChoice = undefined;
+    document.getElementById("pop-up-image").src = "/assets/images/winner.png";
 }
