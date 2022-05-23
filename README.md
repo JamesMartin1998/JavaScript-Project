@@ -70,3 +70,14 @@ On smaller devices, the 'How to Play' section moves vertically underneath the 'A
     - If the games remaining reaches zero, the game is finished and a pop up will appear over the game section to inform the user of the overall result
 
 ![Image showing the Game Section](/assets/images/game-section.png)
+
+- Pop Up Section 
+    - The pop up section appears over the game section when the games remaining equals zero
+    - Depending on the result, an appropriate message will displayed to the user to inform them of the overall result
+    - An image of a trophy will be seen if there is a winner. Alternatively an image of a handshake will be used in the event of a draw
+    - The button in the top right of the pop up appears red when hovered on to show the user it can be clicked
+    - When the button is clicked, the pop up will close and the game will be reset so a new game can be started
+
+![Image showing the Pop Up Winner Message](/assets/images/pop-up-win.png)
+
+![Image showing the Pop Up Draw Message](/assets/images/pop-up-draw.png)
