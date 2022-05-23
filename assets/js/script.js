@@ -212,6 +212,7 @@ function calculateTotalWinner() {
     } else if (computerScore > playerScore) {
         overallWinner = "computer";
     } else {
+        overallWinner = "draw"
         console.log("It's a draw");
     }
 }
