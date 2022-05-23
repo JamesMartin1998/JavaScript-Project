@@ -177,11 +177,6 @@ footer {
     background:rgb(37, 70, 254);
 }
 
-#page-container {
-    position: relative;
-    height:100vh;
-}
-
 footer ul {
     list-style: none;
     padding: 0;
@@ -199,6 +194,11 @@ footer a {
 
 footer i {
     font-size: 3rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0%;
 }
 
 @media only screen and (max-width: 450px){
