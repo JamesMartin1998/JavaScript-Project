@@ -45,3 +45,11 @@ On smaller devices, the 'How to Play' section moves vertically underneath the 'A
     - code for this section was used from Code Institute's Love Running Project
 
 ![Image showing the Footer Section](/assets/images/footer.png)
+
+- Choose Weapon Section
+    - This section is one of two sections for the game. It allows the user to choose their weapon for the game, start the game and reset the game
+    - Five circular buttons are used with background images to clealy show users the weapon
+    - A hover effect is used on the weapon buttons to enlarge them
+    - When users click a weapon button, the user will be able to an image of their weapon in the game section appear
+    - The 'fight!' button is used to start the game. If it is pressed before a weapon has been selected by the user, the user will receive an alert to tell them they need to select a weapon before starting a game. Consequently, the game will not start and the user has freedom to choose a weapon. If it is clicked after a weapon has been chosen, the game will start. The user will see an image of the computer's weapon, a result message and updates to the player score, computer score and games remaining in the game section
+    - The 'reset' button is used to 
