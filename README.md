@@ -108,3 +108,23 @@ In this project I learned that when using a language such as JavaScript, fixing 
 ## Lighthouse Testing
 
 ![Image showing the Lighthouse report](/assets/images/lighthouse.png)
+
+## Deployment 
+
+- The site was deployed to GitHub pages by:
+    - Selecting 'Settings' in the GitHub repository.
+    - Clicking the 'Pages' tab.
+    - From the source section drop-down menu, select the Master Branch.
+    - This will then indicate that the project has been deployed successfully.
+
+The link for this project: https://jamesmartin1998.github.io/JavaScript-Project/
+
+## Credits
+
+- The video was embedded from Youtube (https://www.youtube.com/watch?v=Kov2G0GouBw&t=4s) and features the TV show 'The Big Bang Theory'
+- The image showing which weapons beat each other is from Wikipedia (https://en.wikipedia.org/wiki/File:Rock_paper_scissors_lizard_spock.png)
+- The images used for the weapons are from tonyflorida.com and were edited and cropped to size using Microsoft Paint (https://tonyflorida.com/rock-paper-scissors-lizard-spock-rules/)
+- The trophy image is from clipartkey.com (https://www.clipartkey.com/downpng/ibiThR_1-gif-clipart-clip-art-trophy-1st-clipart/)
+- The handshake image is from clipart.world (https://clipart.world/handshake-clipart/)
+- Social links code was used from Code Institutes Love Running Project
+- Icons used for social links are from Font Awesome
