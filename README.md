@@ -85,9 +85,11 @@ On smaller devices, the 'How to Play' section moves vertically underneath the 'A
 ## Solved Bugs
 
 In this project I learned that when using a language such as JavaScript, fixing one bug can often lead to finding a new one. 
+- Fixed the conditionals that were causing the computer to always win
 - Fixed users starting the game without choosing a weapon
 - Fixed the user playing a infinite number of games as the games remaining would continue into the minus numbers instead of stoping at zero
 - Fixed the wrong image showing in the pop up section
+- Fixed HTML W3C Validator error (div not allowed as child of button) by using img elements instead of divs with backgrounds
 
 ## Unfixed Bugs
 
@@ -96,3 +98,13 @@ In this project I learned that when using a language such as JavaScript, fixing 
 ## Validator Testing
 
 - HTML
+    - Official W3C validator returned no errors.
+- CSS
+- 
+    - Officical Jigsaw validator returned no errors.
+- JavaScript
+    - Passes through JSHint with no significant issues.
+
+## Lighthouse Testing
+
+![Image showing the Lighthouse report](/assets/images/lighthouse.png)

@@ -113,7 +113,7 @@ header li > a:hover{
 
 @media only screen and (max-width:370px){
     h1 {
-        font-size: 1.5;
+        font-size: 1.5rem;
         width:75%;
     }
 
@@ -245,7 +245,7 @@ h2 {
     height:7rem;
     border-radius: 50%;
     margin:1%;
-    transition-property: width height margin;
+    transition-property: width, height, margin;
     transition-duration: 0.5s;
     border: 2px solid rgb(37, 70, 254);
 }
@@ -254,6 +254,11 @@ h2 {
     width: 8.5rem;
     height: 8.5rem;
     margin: 0%;
+}
+
+button > span {
+    width:7rem;
+    height: 7rem;
 }
 
 #submit-btn {
@@ -265,7 +270,7 @@ h2 {
     font-size: 1.2rem;
     margin-bottom:1rem;
     border-color:rgb(37, 70, 254);
-    transition-property: width height margin;
+    transition-property: width, height, margin;
     transition-duration: 0.5s;
 }
 
@@ -278,7 +283,7 @@ h2 {
     border-color: rgb(255, 23, 23);
     margin-bottom:1rem;
     margin-left:5rem;
-    transition-property: width height margin;
+    transition-property: width, height, margin;
     transition-duration: 0.5s;
 }
 
@@ -300,54 +305,10 @@ h2 {
     background: white;
 }
 
-#rock-image {
-    background-image: url("/assets/images/rock.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
+.weapon-image {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-}
-
-#paper-image {
-    background-image: url("/assets/images/paper.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-#scissors-image {
-    background-image: url("/assets/images/scissors.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-#lizard-image {
-    background-image: url("/assets/images/lizard.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-/* https://www.anyrgb.com/en-clipart-pnj4g */
-#spock-image {
-    background-image: url("/assets/images/spock.png");
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    object-fit: contain;
     border-radius: 50%;
 }
 
