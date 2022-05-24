@@ -19,6 +19,8 @@ document.addEventListener('keypress', function (e) {
     }
 });
 
+// Following Code Block adapts upon code from Code Institute's Love Maths Project
+
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
@@ -45,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
+/** Starts the game by calling functions in order */
 function startGame() {
     genComputerWeapon();
     displayComputerImage(computerWeapon);
@@ -241,6 +244,7 @@ function mostWinsMessage() {
     }
 }
 
+/** Resets the game */
 function resetGame() {
     gamesRemaining = 5;
     playerScore = 0;

@@ -1,3 +1,5 @@
+/* Body Rules and Flex Classes */
+
 body {
     margin: 0;
     padding: 0;
@@ -33,6 +35,8 @@ body {
     align-items: center;
 }
 
+/* Header */
+
 header {
     background: rgb(37, 70, 254);
     padding: 0.5% 0.5%;
@@ -67,6 +71,8 @@ header li > a {
 header li > a:hover{
     text-decoration: underline;
 }
+
+/* Header Media Queries */
 
 @media only screen and (max-width:750px){
     h1{
@@ -122,7 +128,7 @@ header li > a:hover{
     }
 }
 
-/* Landing Page */
+/* Home Page */
 
 #landing-container {
     width:100%;
@@ -158,6 +164,8 @@ header li > a:hover{
 #rules {
     justify-content: center;
 }
+
+/* Home Page Media Queries */
 
 @media only screen and (max-width: 900px){
     #landing-container {
@@ -195,6 +203,8 @@ footer a {
 footer i {
     font-size: 3rem;
 }
+
+/* Footer Media Queries */
 
 @media only screen and (max-width: 450px){
     footer i{
@@ -312,7 +322,7 @@ button > span {
     border-radius: 50%;
 }
 
-/* Choose weapon section media quieries */
+/* Choose Weapon Section Media Queries */
 
 @media only screen and (max-width:640px){
     .weapon-btn{
@@ -390,7 +400,7 @@ button > span {
     }
 }
 
-/* Game section */
+/* Game Section */
 
 #left-container {
     width:40%;
@@ -449,7 +459,7 @@ h3 {
     height: auto;
 }
 
-/* Game section media queries */
+/* Game Section Media Queries */
 
 @media only screen and (max-width:1250px){
     #left-container div, #right-container div {
@@ -479,6 +489,8 @@ h3 {
         min-height: 10rem;
     }
 }
+
+/* Pop Up Section */
 
 #pop-up {
     position: absolute;
