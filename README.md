@@ -81,3 +81,18 @@ On smaller devices, the 'How to Play' section moves vertically underneath the 'A
 ![Image showing the Pop Up Winner Message](/assets/images/pop-up-win.png)
 
 ![Image showing the Pop Up Draw Message](/assets/images/pop-up-draw.png)
+
+## Solved Bugs
+
+In this project I learned that when using a language such as JavaScript, fixing one bug can often lead to finding a new one. 
+- Fixed users starting the game without choosing a weapon
+- Fixed the user playing a infinite number of games as the games remaining would continue into the minus numbers instead of stoping at zero
+- Fixed the wrong image showing in the pop up section
+
+## Unfixed Bugs
+
+- There are no remaining found bugs.
+
+## Validator Testing
+
+- HTML
