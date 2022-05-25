@@ -136,7 +136,7 @@ function calculateWinner() {
 function displayWeaponImage(weaponChoice) {
     let playerWeaponDiv = document.getElementById("player-weapon-div");
     playerWeaponDiv.innerHTML = `
-        <img src="/assets/images/${weaponChoice}.png" alt="${weaponChoice} image" class="game-images">
+        <img src="./assets/images/${weaponChoice}.png" alt="${weaponChoice} image" class="game-images">
     `;
 }
 
@@ -144,7 +144,7 @@ function displayWeaponImage(weaponChoice) {
 function displayComputerImage(computerWeapon) {
     let computerWeaponDiv = document.getElementById("computer-weapon-div");
     computerWeaponDiv.innerHTML = `
-        <img src="/assets/images/${computerWeapon}.png" alt="${computerWeapon} image" class="game-images">
+        <img src="./assets/images/${computerWeapon}.png" alt="${computerWeapon} image" class="game-images">
     `;
 }
 
@@ -240,7 +240,7 @@ function mostWinsMessage() {
         overallMessage.style.textTransform = "capitalize";
     } else {
         overallMessage.textContent = `It's A Draw!`;
-        document.getElementById("pop-up-image").src = "/assets/images/handshake.png";
+        document.getElementById("pop-up-image").src = "./assets/images/handshake.png";
     }
 }
 
@@ -258,5 +258,5 @@ function resetGame() {
     removeComputerImage();
     removePlayerImage();
     weaponChoice = undefined;
-    document.getElementById("pop-up-image").src = "/assets/images/winner.png";
+    document.getElementById("pop-up-image").src = "./assets/images/winner.png";
 }
