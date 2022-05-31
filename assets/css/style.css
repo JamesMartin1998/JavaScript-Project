@@ -15,7 +15,7 @@ body {
 }
 
 #play-body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .flex {
@@ -33,6 +33,11 @@ body {
 .flex-center {
     justify-content: center;
     align-items: center;
+}
+
+#space{
+    width: 100%;
+    min-height: 10rem;
 }
 
 /* Header */
@@ -202,6 +207,11 @@ footer a {
 
 footer i {
     font-size: 3rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0%;
 }
 
 /* Footer Media Queries */
