@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
                 if (weaponChoice === undefined) {
-                    alert("You must choose a weapon before fighting")
+                    alert("You must choose a weapon before fighting");
                 } else {
                     startGame();
                 }
@@ -148,7 +148,7 @@ function displayComputerImage(computerWeapon) {
 }
 
 /** Removes the player weapon image */
-function removePlayerImage(){
+function removePlayerImage() {
     let playerWeaponDiv = document.getElementById("player-weapon-div");
     playerWeaponDiv.innerHTML = "";
 }
