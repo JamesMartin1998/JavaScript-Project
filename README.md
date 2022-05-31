@@ -112,15 +112,27 @@ In this project I learned that when using a language such as JavaScript, fixing 
 
 - HTML
     - Official W3C validator returned no errors.
+
+![Image showing the W3C validator for home page](/assets/images/w3c-home.png)
+
+![Image showing the W3C validator for play page](/assets/images/w3c-play.png)
 - CSS
-- 
     - Officical Jigsaw validator returned no errors.
+
+![Image showing the CSS validator for home page](/assets/images/css-home.png)
+
+![Image showing the CSS validator for play page](/assets/images/css-play.png)
+
 - JavaScript
     - Passes through JSHint with no significant issues.
 
+![Image showing the jshint result](/assets/images/jshint.png)
+
 ## Lighthouse Testing
 
-![Image showing the Lighthouse report](/assets/images/lighthouse.png)
+![Image showing the Lighthouse report for home page](/assets/images/lighthouse-home.png)
+
+![Image showing the Lighthouse report for play page](/assets/images/lighthouse-play.png)
 
 ## Deployment 
 
