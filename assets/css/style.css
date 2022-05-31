@@ -157,6 +157,10 @@ header li > a:hover{
     padding: 1rem;
 }
 
+iframe {
+    border: none;
+}
+
 #about-game {
     justify-items: center;
 }
