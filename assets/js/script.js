@@ -1,8 +1,3 @@
-/** Once the DOM has loaded, an HTML collection of all buttons will be stored in a variable 'buttons'.
- *  The loop is used to check the data-type attribute of each button when clicked.
- *  If a weapon button is pressed, it will be stored in a variable. If the fight button is pressed, it will call the startGame function.
- */
-
 let weaponChoice;
 let result;
 let playerScore = 0;
@@ -19,7 +14,11 @@ document.addEventListener('keypress', function (e) {
     }
 });
 
-// Following Code Block adapts upon code from Code Institute's Love Maths Project
+/* Following Code Block adapts upon code from Code Institute's Love Maths Project
+Once the DOM has loaded, an HTML collection of all buttons will be stored in a variable 'buttons'.
+The loop is used to check the data-type attribute of each button when clicked.
+Each button type is unique and consequently calls different functions
+*/
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
