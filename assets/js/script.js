@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 removeComputerImage();
                 clearWinnerMessage();
             }
-        })
+        });
     }
-})
+});
 
 /** Starts the game by calling functions in order */
 function startGame() {
@@ -90,11 +90,11 @@ function genComputerWeapon() {
 function calculateWinner() {
     if (weaponChoice === "rock") {
         if (computerWeapon === "lizard" || computerWeapon === "scissors") {
-            result = "playerWin"
+            result = "playerWin";
         } else if (computerWeapon === "rock") {
             result = "draw";
         } else {
-            result = "computerWin"
+            result = "computerWin";
         }
     } else if (weaponChoice === "scissors") {
         if (computerWeapon === "paper" || computerWeapon === "lizard") {
@@ -110,7 +110,7 @@ function calculateWinner() {
         } else if (computerWeapon === "paper") {
             result = "draw";
         } else {
-            result = "computerWin"
+            result = "computerWin";
         }
     } else if (weaponChoice === "lizard") {
         if (computerWeapon === "spock" || computerWeapon === "paper") {
@@ -118,7 +118,7 @@ function calculateWinner() {
         } else if (computerWeapon === "lizard") {
             result = "draw";
         } else {
-            result = "computerWin"
+            result = "computerWin";
         }
     } else {
         if (computerWeapon === "scissors" || computerWeapon === "rock") {
@@ -214,7 +214,7 @@ function calculateTotalWinner() {
     } else if (computerScore > playerScore) {
         overallWinner = "computer";
     } else {
-        overallWinner = "draw"
+        overallWinner = "draw";
         console.log("It's a draw");
     }
 }
