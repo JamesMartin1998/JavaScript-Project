@@ -1,5 +1,5 @@
 # Rock, Paper, Scissors, Lizard, Spock Game
-The Rock, Paper, Scissors, Lizard, Spock Game is a more complex version of the popular Rock, Paper, Scissors game that was shown on the TV show 'The Big Bang Theory'. This project aims to teach people about the games origin and how to play, as well as allow people to play the game virtually, and independently against the computer. Players can choose a weapon and fight against the computer, which will randomly choose a weapon. Scores and the remaining number of games are displayed and when no more games remain, a popup will display the overall outcome of the games. 
+The Rock, Paper, Scissors, Lizard, Spock Game is a more complex version of the popular Rock, Paper, Scissors game that was shown on the TV show 'The Big Bang Theory'. This project aims to teach people about the games origin and how to play, as well as allow people to play the game virtually, and independently against the computer. Players can choose a weapon and fight against the computer, which will randomly choose a weapon. Scores and the remaining number of games are displayed and when no more games remain. A popup will display the overall outcome of the games. 
 
 The target audience for the project would include people that have heard about the game before (perhaps fans of 'The Big Bang Theory') and want to learn how to play and practice against the computer, as well as people who have played before but have no one else to play against and consequently rely on playing against the computer. The game is fully responsive, making it easy to play on a mobile device.
 
@@ -30,7 +30,7 @@ The target audience for the project would include people that have heard about t
 - How to Play Section
     - This section aims to explain the rules of the game and how to initiate the game with the buttons and interface on the website.
     - An ordered list shows the steps in order so the user can easily understand the procedure of the game.
-    - An image is shows to clearly show the relationship bewteen all of the weapons so the user can understand the possibe outcomes in the game.
+    - An image is used to clearly show the relationship bewteen all of the weapons so the user can understand the possibe outcomes in the game.
 
 ![Image showing the How to Play Section](/assets/images/how-to-play.png)
 
@@ -42,7 +42,7 @@ On smaller devices, the 'How to Play' section moves vertically underneath the 'A
     - This section follows the same design theme as the navigation bar for consistency.
     - Social links are included as icons from FontAwesome.
     - When clicked, the links open in a new tab for a good user experience.
-    - code for this section was used from Code Institute's Love Running Project.
+    - Code for this section was used from Code Institute's Love Running Project.
 
 ![Image showing the Footer Section](/assets/images/footer.png)
 
@@ -74,7 +74,7 @@ On smaller devices, the 'How to Play' section moves vertically underneath the 'A
 - Pop Up Section 
     - The pop up section appears over the game section when the games remaining equals zero.
     - Depending on the result, an appropriate message will displayed to the user to inform them of the overall result.
-    - An image of a trophy will be seen if there is a winner. Alternatively an image of a handshake will be used in the event of a draw.
+    - An image of a trophy will be seen if there is a winner. Alternatively, an image of a handshake will be used in the event of a draw.
     - The button in the top right of the pop up appears red when hovered on to show the user it can be clicked.
     - When the button is clicked, the pop up will close and the game will be reset so a new game can be started.
 
@@ -101,8 +101,8 @@ In this project I learned that when using a language such as JavaScript, fixing 
 - Fixed users starting the game without choosing a weapon. Users will be sent an alert.
 - Fixed the user playing a infinite number of games as the games remaining would continue into the minus numbers instead of stoping at zero. This was fixed by calling the reset game function.
 - Fixed the wrong image showing in the pop up section.
-- Fixed HTML W3C Validator error (div not allowed as child of button) by using img elements instead of divs with backgrounds
-- Fixed the footer error on the 'Play' page. On larger devices the content height wouldn't fit the page so the footer would appear in the middle of the page instead on the bottom. I tried setting the body height to 100vh and positioning the footer at the bottom, but this caused the footer to cover content of some devices. To fix, I added a div with min-height of 10rem to provide the content with enough height to position the footer at the bottom of the page.
+- Fixed HTML W3C Validator error (div not allowed as child of button) by using img elements instead of divs with backgrounds.
+- Fixed the footer error on the 'Play' page. On larger devices, the content height wouldn't fit the page so the footer would appear in the middle of the page instead on the bottom. I tried setting the body height to 100vh and positioning the footer at the bottom, but this caused the footer to cover content of some devices. To fix, I added a div with min-height of 10rem to provide the content with enough height to position the footer at the bottom of the page.
 
 ## Unfixed Bugs
 
@@ -146,10 +146,11 @@ The link for this project: https://jamesmartin1998.github.io/JavaScript-Project/
 
 ## Credits
 
-- The video was embedded from Youtube (https://www.youtube.com/watch?v=Kov2G0GouBw&t=4s) and features the TV show 'The Big Bang Theory'
-- The image showing which weapons beat each other is from Wikipedia (https://en.wikipedia.org/wiki/File:Rock_paper_scissors_lizard_spock.png)
-- The images used for the weapons are from tonyflorida.com and were edited and cropped to size using Microsoft Paint (https://tonyflorida.com/rock-paper-scissors-lizard-spock-rules/)
-- The trophy image is from clipartkey.com (https://www.clipartkey.com/downpng/ibiThR_1-gif-clipart-clip-art-trophy-1st-clipart/)
-- The handshake image is from clipart.world (https://clipart.world/handshake-clipart/)
-- Social links code was used from Code Institutes Love Running Project
-- Icons used for social links are from Font Awesome
+- The video was embedded from Youtube (https://www.youtube.com/watch?v=Kov2G0GouBw&t=4s) and features the TV show 'The Big Bang Theory'.
+- The image showing which weapons beat each other is from Wikipedia (https://en.wikipedia.org/wiki/File:Rock_paper_scissors_lizard_spock.png).
+- The images used for the weapons are from tonyflorida.com and were edited and cropped to size using Microsoft Paint (https://tonyflorida.com/rock-paper-scissors-lizard-spock-rules/).
+- The trophy image is from clipartkey.com (https://www.clipartkey.com/downpng/ibiThR_1-gif-clipart-clip-art-trophy-1st-clipart/).
+- The handshake image is from clipart.world (https://clipart.world/handshake-clipart/).
+- Social links code was used from Code Institutes Love Running Project.
+- Icons used for social links are from Font Awesome.
+- Thanks to my mentor Ronan for his support throughout this project.
