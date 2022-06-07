@@ -94,6 +94,31 @@ On smaller devices, the 'How to Play' section moves vertically underneath the 'A
 
 ![Image showing the responsiveness of play page](/assets/images/responsive-play.png)
 
+### High Level Test Cases
+
+![Image showing the test cases](/assets/images/test-cases.png)
+
+User Stories:
+
+- Users want to view the website as intended on any device - TC001, TC002
+- Users want to understand the purpose of the site - TC003, TC004
+- Users want to easily navigate the website and find contact information - TC003
+- Users want to understand what each section of the website is showing - TC004
+- Users that have never heard of the game before may want to learn about its origin	- TC005
+- Users want to understand how to play the game and how to win - TC006
+- Users want to choose weapons and have confirmation - TC007
+- Users want to be able to start the game - TC008
+- Users want to see the results of each game, and player/computer scores - TC009
+- Users want to know how many games are remaining - TC010
+- Users want to know the overall winner - TC011
+- Users want to be able to reset the game at any point - TC012
+
+### High Level Test Case Results
+
+![Image showing the test case results](/assets/images/test-case-results.png)
+
+Full Results can be found at: https://github.com/JamesMartin1998/JavaScript-Project/blob/main/testing.xlsx?raw=true
+
 ## Solved Bugs
 
 In this project I learned that when using a language such as JavaScript, fixing one bug can often lead to finding a new one. 
