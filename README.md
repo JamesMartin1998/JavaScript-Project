@@ -161,6 +161,8 @@ In this project I learned that when using a language such as JavaScript, fixing 
 
 ## Deployment 
 
+### GitHub Pages
+
 - The site was deployed to GitHub pages by:
     - Selecting 'Settings' in the GitHub repository.
     - Clicking the 'Pages' tab.
@@ -168,6 +170,15 @@ In this project I learned that when using a language such as JavaScript, fixing 
     - This will then indicate that the project has been deployed successfully.
 
 The link for this project: https://jamesmartin1998.github.io/JavaScript-Project/
+
+### Run Locally
+
+- The site can be run locally by:
+    - Opening the project repository
+    - Opening the dropdown on the 'code' button
+    - Downloading the zip file
+    - Extracting the files from the zip file into a new folder on your computer
+    - Opening the folder in an IDE of your choice
 
 ## Credits
 
